@@ -1,18 +1,15 @@
 'use strict';
 
-const boxCalc = (true, width, padding, borderSize) => {
+/* const boxCalc = (true, width, padding, borderSize) => {
     if (boolean === true) {
         return ('el ancho del contenido es:' + '' + `y el ancho de la caja es ${width}`)
     } else {
-
-
     }
-
     return `El ancho del contenido es: ${} y el ancho total de la caja es: ${}`;
 };
 
 boxCalc();
-
+ */
 // ------------------------ Solucion encontrada: ----------------------------
 
 
