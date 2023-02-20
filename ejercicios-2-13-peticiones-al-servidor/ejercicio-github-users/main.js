@@ -7,17 +7,15 @@
 function getGithubUsers(event) {
     event.preventDefault();
     const userName = document.querySelector('.js-username').value;
-
     fetch(`https://api.github.com/users/${userName}`)
-
         .then((response) => response.json())
         .then((data) => {
             document.querySelector('.js-name').innerHTML = data.name;
             document.querySelector('img').src = data.avatar_url;
             document.querySelector('.js-repos').innerHTML = data.public_repos;
-
         });
 }
+
 const btn = document.querySelector('.js-search');
 btn.addEventListener('click', getGithubUsers);
 
